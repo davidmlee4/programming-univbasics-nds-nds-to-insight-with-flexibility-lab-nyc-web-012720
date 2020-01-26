@@ -115,6 +115,7 @@ while i < source.length do
   result << movies_with_director_key(director,movies)
   i += 1
 end
+result
   # INPUT:
   # * source: An Array of Hashes containing director information including
   # :name and :movies
