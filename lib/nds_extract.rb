@@ -101,12 +101,16 @@ result
 end
 
 def movies_with_directors_set(source)
+  #source =
   #[{:name=>"Byron Poodle",:movies=>[{:title=>"At the park"}, {:title=>"On the couch"}]},
   #{:name=>"Nancy Drew", :movies=>[{:title=>"Biting"}]}]
   # GOAL: For each director, find their :movies Array and stick it in a new Array
 
 result = []
-
+i = 0 #i = index for each director and their movies
+while i < source.length do
+  director = source[i][:name] 
+end
   # INPUT:
   # * source: An Array of Hashes containing director information including
   # :name and :movies
