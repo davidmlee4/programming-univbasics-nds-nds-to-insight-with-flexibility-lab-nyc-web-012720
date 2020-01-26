@@ -74,21 +74,8 @@ def gross_per_studio(collection) #we want to find out how much each studio is gr
   #[{:title=>"Movie A", :studio=>"Alpha Films", :worldwide_gross=>10},
  #{:title=>"Movie B", :studio=>"Alpha Films", :worldwide_gross=>30},
  #{:title=>"Movie C", :studio=>"Omega Films", :worldwide_gross=>30}]
- result = {}
- i = 0
- while i < collection.length do
-   movie = collection[i]
-   studio_name = collection[i][:studio]
-   movie_gross = collection[i][:worldwide_gross]
 
-   if !result[studio_name]  #essentially means if there is nothing there currently for that studio_name add in their gross
-     result[studio_name] = movie_gross
-   else   #if !result[studio_name] = 0
-     result[studio_name] += movie_gross
-   end
-   i+= 1
- end
- result
+
   #
   # INPUT:
   # * collection: Array of Hashes where each Hash where each Hash represents a movie
