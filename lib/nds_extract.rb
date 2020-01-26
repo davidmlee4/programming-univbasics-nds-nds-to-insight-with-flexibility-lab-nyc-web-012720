@@ -105,16 +105,7 @@ def movies_with_directors_set(source)
   #{:name=>"Nancy Drew", :movies=>[{:title=>"Biting"}]}]
   # GOAL: For each director, find their :movies Array and stick it in a new Array
 
-  outer = []
-  outer_index = 0
-  while outer_index < source.length do
-    movies_index = 0
-    director_name = source[outer_index][:name]
-    director_movies = source[outer_index][:movies]
-    outer << movies_with_director_key(director_name,director_movies)
-    outer_index += 1
-  end
-  outer
+
   # INPUT:
   # * source: An Array of Hashes containing director information including
   # :name and :movies
