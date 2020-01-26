@@ -110,7 +110,7 @@ result = []
 i = 0 #i = index for each director and their movies
 while i < source.length do
   movies = source[i][:movies]
-  director = source[i]:name]
+  director = source[i][:name]
   movies_index = 0
   result << movies_with_director_key(director,movies)
   i += 1
