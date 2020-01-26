@@ -82,6 +82,9 @@ while i < collection.length do
   movie_gross = movie[:worldwide_gross]
 
   if !result[studio_name]
+    result[studio_name] = movie_gross
+  else
+    result[studio_name] += movie_gross
 
 
 end
