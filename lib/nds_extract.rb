@@ -77,7 +77,10 @@ def gross_per_studio(collection) #we want to find out how much each studio is gr
 result = {}
 i = 0
 while i < collection.length do
-  movie = collection[i] 
+  movie = collection[i]
+  studio_name = collection[i][:studio]
+  result[studio_name] = movie[:worldwide_gross]
+
 end
 
   #
