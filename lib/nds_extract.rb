@@ -5,7 +5,19 @@ require 'directors_database'
 # [3,4,5], [6]] => [1,2,3,4,5,6].
 
 def flatten_a_o_a(aoa)
-pp aoa
+  result = []
+  i = 0
+
+  while i < aoa.length do
+    k = 0
+    while k < aoa[i].length do
+      result << aoa[i][k]
+      k += 1
+    end
+    i += 1
+  end
+
+  result
 end
 
 def movie_with_director_name(director_name, movie_data)
@@ -26,17 +38,12 @@ def movies_with_director_key(name, movies_collection) #[{:title=>"TestA"}, {:tit
   # of movies and a directors name to the movie_with_director_name method
   # and accumulate the returned Array of movies into a new Array that's
   # returned by this method.
-  result = []
-  i = 0
-  while i < movies_collection.length do
-    movie_data = movies_collection[i] #created this variable because we wanted to use each index from movies_collection
+pp movies_collection
+   #created this variable because we wanted to use each index from movies_collection
                                 # and add it into our result array. Because we know movie_with_director_name works with
                                 # hashes we threw that method in with the new variable so that it can take the hashes
                                 # from movies_collection and extract them individually by the index into result
-    result << movie_with_director_name(name, movie_data)
-    i += 1
-  end
-  result
+
   # INPUT:
   # * name: A director's name
   # * movies_collection: An Array of Hashes where each Hash represents a movie
