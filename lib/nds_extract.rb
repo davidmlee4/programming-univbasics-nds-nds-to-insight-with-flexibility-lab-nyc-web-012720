@@ -38,7 +38,6 @@ def movies_with_director_key(name, movies_collection) #[{:title=>"TestA"}, {:tit
   # of movies and a directors name to the movie_with_director_name method
   # and accumulate the returned Array of movies into a new Array that's
   # returned by this method.
-pp movies_collection
 result = []
 i = 0
 while i < movies_collection.length do
