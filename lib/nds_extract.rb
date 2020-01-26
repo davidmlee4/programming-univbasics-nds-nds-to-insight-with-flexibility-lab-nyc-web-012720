@@ -105,6 +105,7 @@ def movies_with_directors_set(source)
   #{:name=>"Nancy Drew", :movies=>[{:title=>"Biting"}]}]
   # GOAL: For each director, find their :movies Array and stick it in a new Array
 
+result = []
 
   # INPUT:
   # * source: An Array of Hashes containing director information including
