@@ -79,10 +79,10 @@ i = 0
 while i < collection.length do
   movie = collection[i]
   studio_name = collection[i][:studio]
-  result[studio_name] = movie[:worldwide_gross]
+  movie_gross = movie[:worldwide_gross]
 
   if !result[studio_name]
-    
+
 
 end
 
