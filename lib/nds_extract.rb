@@ -46,6 +46,7 @@ while i < movies_collection.length do
   result << movie_with_director_name(name,movie_data)
   i += 1
 end
+result
    #created this variable because we wanted to use each index from movies_collection
                                 # and add it into our result array. Because we know movie_with_director_name works with
                                 # hashes we threw that method in with the new variable so that it can take the hashes
