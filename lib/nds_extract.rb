@@ -87,7 +87,6 @@ while i < collection.length do
     result[studio_name] += movie_gross
   end
   i += 1
-
 end
 result
 
