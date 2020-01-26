@@ -109,7 +109,11 @@ def movies_with_directors_set(source)
 result = []
 i = 0 #i = index for each director and their movies
 while i < source.length do
-  director = source[i][:name] 
+  movies = source[i][:movies]
+  movies_index = 0
+  while movies_index < movies.length do
+    result << movies[movies_index]
+  end
 end
   # INPUT:
   # * source: An Array of Hashes containing director information including
