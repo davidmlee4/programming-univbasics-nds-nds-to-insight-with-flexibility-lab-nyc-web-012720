@@ -39,6 +39,13 @@ def movies_with_director_key(name, movies_collection) #[{:title=>"TestA"}, {:tit
   # and accumulate the returned Array of movies into a new Array that's
   # returned by this method.
 pp movies_collection
+result = []
+i = 0
+while i < movies_collection.length do
+  movie_data = movies_collection[i]
+  result << movie_with_director_name(name,movie_data)
+  i += 1
+end
    #created this variable because we wanted to use each index from movies_collection
                                 # and add it into our result array. Because we know movie_with_director_name works with
                                 # hashes we threw that method in with the new variable so that it can take the hashes
