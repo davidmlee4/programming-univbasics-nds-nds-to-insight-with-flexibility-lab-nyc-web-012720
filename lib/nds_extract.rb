@@ -70,7 +70,7 @@ def gross_per_studio(collection) #we want to find out how much each studio is gr
   # GOAL: Given an Array of Hashes where each Hash represents a movie,
   # return a Hash that includes the total worldwide_gross of all the movies from
   # each studio.
-
+#collection = 
   #[{:title=>"Movie A", :studio=>"Alpha Films", :worldwide_gross=>10},
  #{:title=>"Movie B", :studio=>"Alpha Films", :worldwide_gross=>30},
  #{:title=>"Movie C", :studio=>"Omega Films", :worldwide_gross=>30}]
